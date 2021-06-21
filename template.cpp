@@ -6,6 +6,7 @@ using namespace std;
 typedef long long ll;
 
 //gcd(a,b) = gcd(a,a%b) 
+//if a number 'x' is powewr of two, then (x)&(x-1)==0;
 
 int kadens_algorithm(vector<int> arr){
   
