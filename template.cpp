@@ -2,11 +2,16 @@
 #define rep(i,a,b) for(long long int i=a;i<b;i++)
 #define rev_rep(i,a,b) for(long long int i=a;i>b;i--)
 #define mod 1000000007
+#define bpc(x) __builtin_popcount(x)
+#define bpcll(x) __builtin_popcountll(x)
 using namespace std;
 typedef long long ll;
 
 //gcd(a,b) = gcd(a,a%b) 
 //if a number 'x' is powewr of two, then (x)&(x-1)==0;
+// for vector and array, lower bound is - 
+// auto it = lower_bound(a.begin(),a.end(),element);
+// for set - lower_bound will be -> s.lower_bound(element);
 
 int kadens_algorithm(vector<int> arr){
   
