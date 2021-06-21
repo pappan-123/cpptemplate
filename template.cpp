@@ -2,8 +2,9 @@
 #define rep(i,a,b) for(long long int i=a;i<b;i++)
 #define rev_rep(i,a,b) for(long long int i=a;i>b;i--)
 #define mod 1000000007
-#define bpc(x) __builtin_popcount(x)
-#define bpcll(x) __builtin_popcountll(x)
+#define bpc(x) __builtin_popcount(x) // used to count no of 1 in binary representation
+#define bpcll(x) __builtin_popcountll(x) 
+#define ctz(x) __builtin_ctz(x)  // used to count trailing zeros
 using namespace std;
 typedef long long ll;
 
