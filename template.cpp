@@ -38,15 +38,21 @@ int even_odd_check(int n)
     else
     return 0;
 }
-int decToBinary(int n)
+int decimalToBinary(int N)
 {
-    for (int i = 31; i >= 0; i--) {
-        int k = n >> i;
-        if (k & 1)
-            return 1;
-        else
-            return 0;
+    ull B_Number = 0;
+    int cnt = 0;
+    while (N != 0) {
+        int rem = N % 2;
+        ull c = pow(10, cnt);
+        B_Number += rem * c;
+        N /= 2;
+ 
+        // Count used to store exponent value
+        cnt++;
     }
+ 
+    return B_Number;
 }
 int main()    
 {
