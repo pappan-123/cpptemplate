@@ -47,8 +47,6 @@ int decimalToBinary(int N)
         ull c = pow(10, cnt);
         B_Number += rem * c;
         N /= 2;
- 
-        // Count used to store exponent value
         cnt++;
     }
  
