@@ -38,13 +38,15 @@ int even_odd_check(int n)
     else
     return 0;
 }
-void printBinary(int n)
+int decToBinary(int n)
 {
-    rev_rep(i,10,-1)
-    {
-        cout<<((n>>i) & i);
+    for (int i = 31; i >= 0; i--) {
+        int k = n >> i;
+        if (k & 1)
+            return 1;
+        else
+            return 0;
     }
-    cout<<"\n";
 }
 int main()    
 {
